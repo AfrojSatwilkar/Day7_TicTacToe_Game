@@ -6,6 +6,8 @@ public class TicTacToeGame {
     //initilized variables
     public char[] gameBoard = new char[10];
     public boolean checkInitilize = true;
+    public char player;
+    public char pc;
 
     //UC1 case is for empty array design pattern
     public void UC1Case() {
@@ -37,9 +39,31 @@ public class TicTacToeGame {
                 count = 0;
                 countTwo++;
                 if (countTwo <= 2) {
-                    System.out.println("___ ___ ___");
+                    System.out.println("--- --- ---");
                 }
             }
         }
+    }
+
+    //UC2 case is for user choice X or O
+    public void UC2Case() {
+        System.out.print("Choose X or O : ");
+        Scanner scanInput = new Scanner(System.in);
+        char getUserInput = scanInput.next().charAt(0);
+
+        if (getUserInput == 'X' || getUserInput == 'O') {
+            if (getUserInput == 'X') {
+                this.player = 'X';
+                this.pc = 'O';
+            } else {
+                this.player = 'O';
+                this.pc = 'X';
+            }
+        } else {
+            System.out.println("wrong input");
+            UC2Case();
+        }
+        System.out.print("Player select - " + this.player + " and PC select - " + this.pc);
+
     }
 }

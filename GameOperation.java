@@ -4,5 +4,6 @@ public class GameOperation {
     public static void main(String[] args) {
         TicTacToeGame ticTacToeMain = new TicTacToeGame();
         ticTacToeMain.UC1Case();
+        ticTacToeMain.UC2Case();
     }
 }
