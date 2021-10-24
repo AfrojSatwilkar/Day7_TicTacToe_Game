@@ -86,6 +86,7 @@ public class GameOperation {
     public void gameMain(char [][] gameBoard) {
 
         while(true) {
+
             Scanner scan = new Scanner(System.in);
             System.out.println("Enter number between 1-9 :");
             int playerPos = scan.nextInt();
@@ -95,6 +96,8 @@ public class GameOperation {
             }
             placePiece(gameBoard, playerPos, "player1");
             printGameBoard(gameBoard);
+
+            System.out.println("==============================");
 
             Random random = new Random();
             int cpuPos = random.nextInt(9) +1;
