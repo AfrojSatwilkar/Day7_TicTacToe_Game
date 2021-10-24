@@ -8,7 +8,7 @@ public class TicTacToeGame {
                               {' ','|',' ','|',' ' },
                               {'-','+','-','+','-' },
                               {' ','|',' ','|',' ' }};
-        gameOperation.printGameBoard(gameBoard);
         gameOperation.chooseLetter();
+        gameOperation.printGameBoard(gameBoard);
     }
 }

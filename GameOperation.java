@@ -1,8 +1,12 @@
 package com.company1.Day7_TicTacToe;
 
+import java.util.ArrayList;
+import java.util.Random;
 import java.util.Scanner;
 
 public class GameOperation {
+    static ArrayList<Integer> playerPositions = new ArrayList<Integer>();
+    static ArrayList<Integer> cpuPositions = new ArrayList<Integer>();
     
     public static void printGameBoard(char [][] gameBoard) {
         for(char[] row :gameBoard) {
