@@ -1,9 +1,14 @@
 package com.company1.Day7_TicTacToe;
 
 public class GameOperation {
-    public static void main(String[] args) {
-        TicTacToeGame ticTacToeMain = new TicTacToeGame();
-        ticTacToeMain.UC1Case();
-        ticTacToeMain.UC2Case();
+    
+    public static void printGameBoard(char [][] gameBoard) {
+        for(char[] row :gameBoard) {
+            for(char c : row) {
+                System.out.print(c);
+            }
+            System.out.println();
+        }
+
     }
 }
