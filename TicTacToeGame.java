@@ -10,5 +10,6 @@ public class TicTacToeGame {
                               {' ','|',' ','|',' ' }};
         gameOperation.chooseLetter();
         gameOperation.printGameBoard(gameBoard);
+        gameOperation.gameMain(gameBoard);
     }
 }
